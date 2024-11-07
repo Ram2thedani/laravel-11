@@ -9,7 +9,10 @@
 </head>
 
 <body>
-
+    <center>Struk</center>
+    @foreach ($detail_penjualan as $detail)
+        <p>{{ $detail->id_barang }}</p>
+    @endforeach
 </body>
 
 </html>
