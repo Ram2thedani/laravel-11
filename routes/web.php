@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PenjualanController::class, 'index']);
-Route::get('/detail/{id}', [DetailpenjualanController::class, 'show']);
+Route::get('/struk/{id}', [DetailpenjualanController::class, 'show']);
+Route::get('/detail/{id}', [DetailpenjualanController::class, 'index']);

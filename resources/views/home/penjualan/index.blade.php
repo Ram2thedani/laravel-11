@@ -26,7 +26,7 @@
                     <tr class="table-primary">
                         <td>{{ $penjualan->id }}</td>
                         <td>{{ $penjualan->tanggal }}</td>
-                        <td><a href="/detail/{{ $penjualan->id }}">Detail</a></td>
+                        <td><a href="/struk/{{ $penjualan->id }}">Struk</a> | <a href="/detail/{{ $penjualan->id }}">Detail</a></td>
 
                     </tr>
                 @endforeach

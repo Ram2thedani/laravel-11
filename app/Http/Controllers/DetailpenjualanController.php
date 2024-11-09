@@ -10,9 +10,10 @@ class DetailpenjualanController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($id)
     {
-        //
+     $detail_penjualan = Detailpenjualan::where('id_penjualan', $id)->get();
+        return view('home.detail_penjualan.detail', compact('detail_penjualan'));
     }
 
     /**
